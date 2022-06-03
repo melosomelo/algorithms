@@ -40,12 +40,17 @@ A resizable array is pretty straightforward. Underneath our implementation, we
 will store our elements in a regular array. If the array gets too big (or to
 small), we can resize it.
 
-Implementing a stack is really easy, as we only need to keep track of the amount
-of elements in the stack (`size`) and the capacity of the array. To `push` an
-element on top of the stack, we simply increment assign `array[size]` to the new
-element and then increment `size`. To `pop` an element is equally simple, we
-just have to decrement `size` and signal that `array[size]` is now empty (or
-not, your choice).
+With this strategy, adding, removing and accessing elements is very simple and
+efficient (except when we need to resize the array). In general, we will only
+need to keep track of the amount of elements in the structure (`size`) and the
+`capacity` of the array. If when inserting an element, `size` equals `capacity`,
+then we just create a new array with double the capacity. If `size` is one
+quarter of `capacity`, then we create a new array with half the original
+capacity.
 
-Using a resizable array to implement a queue is a little bit tricker, but
-nothing complicated.
+You may be asking yourself: _why shrink the array when it's one quarter of the
+capacity? Why don't we shrink it to one half when the array is half full?_ Well,
+that would be very inefficient. What if we had another insertion just after
+shrinking it? We'd have to resize the array all over again. If we shrink it only
+when it's one quarter full, we the new array will still be half full and we will
+be able to delay resizing it.
