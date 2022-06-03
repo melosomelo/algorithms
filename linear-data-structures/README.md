@@ -40,17 +40,6 @@ A resizable array is pretty straightforward. Underneath our implementation, we
 will store our elements in a regular array. If the array gets too big (or to
 small), we can resize it.
 
-With this strategy, adding, removing and accessing elements is very simple and
-efficient (except when we need to resize the array). In general, we will only
-need to keep track of the amount of elements in the structure (`size`) and the
-`capacity` of the array. If when inserting an element, `size` equals `capacity`,
-then we just create a new array with double the capacity. If `size` is one
-quarter of `capacity`, then we create a new array with half the original
-capacity.
-
-You may be asking yourself: _why shrink the array when it's one quarter of the
-capacity? Why don't we shrink it to one half when the array is half full?_ Well,
-that would be very inefficient. What if we had another insertion just after
-shrinking it? We'd have to resize the array all over again. If we shrink it only
-when it's one quarter full, we the new array will still be half full and we will
-be able to delay resizing it.
+In general, we will only need to keep track of the amount of elements inserted
+(`size`) and the `capacity` of the array. Accessing an element becomes only a
+question of indexing the underlying array.
