@@ -11,8 +11,7 @@ a book on top or you can remove and do something with that book (you could
 remove a book from the middle, but that's not really practical, is it?).
 
 As data structures, a stack is just that, a linear collection whose two main
-operations are pushing an element to its top and accessing the element currently
-at the top.
+operations are pushing an element to its top and removing the top element.
 
 We say that a stack has a _LIFO(Last In First Out)_ policy, as the last inserted
 element is the next element in line to be pushed out.
