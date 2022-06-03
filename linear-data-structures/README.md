@@ -32,14 +32,23 @@ regular queue in real life.
 ## Implementations
 
 There are two main ways to implement linear data structures: we can use a
-resizable array or we can use linked lists.
+resizable array or we can use linked lists. Each one has its advantages and
+disadvantages.
 
 ### Resizable arrays
 
-A resizable array is pretty straightforward. Underneath our implementation, we
-will store our elements in a regular array. If the array gets too big (or to
-small), we can resize it.
+Using resizable arrays means that under the hood of our implementation, we
+actually use a regular array to store elements. A general point of concern with
+this strategy is memory management; we need to resize the array as it gets full
+and as it gets too empty. A good rule of thumb is to double the array's capacity
+once it gets full and to halve its capacity when it's a quarter full.
 
-In general, we will only need to keep track of the amount of elements inserted
-(`size`) and the `capacity` of the array. Accessing an element becomes only a
-question of indexing the underlying array.
+You may be asking: _why halve the array when it's one quarter full? Why not
+halve it when it's half full?_ Well, that would make the array 100% full. If we
+were to insert a new element just after shrinking it (which can happen quite a
+lot), we'd make the operation a lot slower. So the rule is double the capacity
+when full and to halve it when one quarter full.
+
+We'll see the specifics of implementing stacks and queues with resizable arrays.
+
+#### Stacks as resizable arrays
