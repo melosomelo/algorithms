@@ -5,6 +5,7 @@ public class Queue {
     private int right = -1;
     private T[] array = (T[]) new Object[1];
 
+
     public void print() {
       String result = "[ ";
       for (int i = 0; i < array.length; i++) {
@@ -30,15 +31,17 @@ public class Queue {
     }
 
     public void shiftLeft() {
-      int size = size();
-      for (int i = 0; i < size; i++) {
+      // The `size` depends on both `left` and `right`. 
+      // We need to store it as we change left and right at the end of this method.
+      int actualSize = size();
+      for (int i = 0; i < actualSize; i++) {
         array[i] = array[i + left];
       }
-      for (int i = size; i < array.length; i++) {
+      for (int i = actualSize; i < array.length; i++) {
         array[i] = null;
       }
       left = 0;
-      right = size - 1;
+      right = actualSize - 1;
     }
 
     public void enqueue(T item) {

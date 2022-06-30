@@ -46,9 +46,33 @@ once it gets full and to halve its capacity when it's a quarter full.
 You may be asking: _why halve the array when it's one quarter full? Why not
 halve it when it's half full?_ Well, that would make the array 100% full. If we
 were to insert a new element just after shrinking it (which can happen quite a
-lot), we'd make the operation a lot slower. So the rule is double the capacity
-when full and to halve it when one quarter full.
+lot), we'd make the operation a lot slower.
 
 We'll see the specifics of implementing stacks and queues with resizable arrays.
 
 #### Stacks as resizable arrays
+
+Using arrays to implement stacks is really simple. We just need to keep track of
+the amount of elements in the stack (`size`) and the `capacity` of the array.
+With that, _pushing_ an element onto the stack boils down to perform an
+assignment in the array and incrementing `size`. _Popping_ the top element of
+the stacks translates to decrementing `size` and freeing the memory of the
+removed element.
+
+remember to place some image here.
+
+#### Queues as resizable arrays
+
+Queues as resizable array get a bit trickier. Since queues have a FIFO policy,
+we may need to remove elements from the beginning of the queue, which means that
+we need to keep track of both the beginning and end of the queue inside the
+array.
+
+As an example, imagine that this is how our queue looks like inside an array:
+`[1 2 3 4]`. The array is completely full and the queue has four elements, with
+`1` being at the start of the queue. If we perform a dequeue, we need to remove
+`1`, which will leave the array like `[- 2 3 4]`. Now, what if we want to
+enqueue another element? The array isn't full, but the position of the elements
+is not adequate. To preserve the FIFO policy, we need to _shift_ all of the
+elements to the start of the array, so we end up with `[2 3 4 -]`. Now we can
+add elements as we did with stacks.
