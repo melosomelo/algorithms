@@ -58,8 +58,4 @@ public class SimpleLinkedList<T> {
     this.size -= 1;
     return oldHead.value;
   }
-
-  public static void main(String[] args) throws Exception {
-    SimpleLinkedList<Integer> lint = new SimpleLinkedList<>();
-  }
 }
