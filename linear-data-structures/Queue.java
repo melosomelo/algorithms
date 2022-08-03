@@ -28,7 +28,7 @@ public class Queue {
       right = size - 1;
     }
 
-    public void shiftLeft() {
+    private void shiftLeft() {
       // The `size` depends on both `left` and `right`.
       // We need to store it as we change left and right at the end of this method.
       int actualSize = size();
@@ -74,4 +74,48 @@ public class Queue {
     }
   }
 
+  public static class LinkedListQueue<T> {
+
+    private class Node<T> {
+      public T value;
+      public Node<T> next;
+    }
+
+    private int size = 0;
+    private Node<T> head = null;
+    private Node<T> tail = null;
+
+    public int size() {
+      return this.size;
+    }
+
+    public boolean isEmpty() {
+      return this.size == 0;
+    }
+
+    public void enqueue(T val) {
+      Node<T> newNode = new Node<>();
+      newNode.value = val;
+      if (this.size == 0) {
+        this.head = newNode;
+      } else {
+        this.tail.next = newNode;
+      }
+      this.tail = newNode;
+      this.size += 1;
+    }
+
+    public T dequeue() throws Exception {
+      if (this.size == 0) {
+        throw new Exception("Cannot remove last from an empty array!");
+      }
+      Node<T> oldHead = this.head;
+      this.head = this.head.next;
+      if (this.size == 1) {
+        this.tail = null;
+      }
+      this.size -= 1;
+      return oldHead.value;
+    }
+  }
 }

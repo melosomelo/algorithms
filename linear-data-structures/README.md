@@ -6,9 +6,9 @@ predecessor and successor.
 
 ## Implemented Structures
 
-- [ ] Queue
+- [x] Queue
   - [x] Resizing queue
-  - [ ] Linked list queue
+  - [x] Linked list queue
 - [x] Stack
   - [x] Resizing stack
   - [x] Linked list stack
