@@ -1,10 +1,8 @@
 public class Queue {
-
   public static class ResizingQueue<T> {
     private int left = 0;
     private int right = -1;
     private T[] array = (T[]) new Object[1];
-
 
     public void print() {
       String result = "[ ";
@@ -31,7 +29,7 @@ public class Queue {
     }
 
     public void shiftLeft() {
-      // The `size` depends on both `left` and `right`. 
+      // The `size` depends on both `left` and `right`.
       // We need to store it as we change left and right at the end of this method.
       int actualSize = size();
       for (int i = 0; i < actualSize; i++) {

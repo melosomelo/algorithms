@@ -29,7 +29,7 @@ As opposed to stacks, queues have a _FIFO(First In First Out)_ policy, since the
 element that first came in will be the first to leave the queue, just like a
 regular queue in real life.
 
-## Implementations
+## Implementations of queues and stacks
 
 There are two main ways to implement linear data structures: we can use a
 resizable array or we can use linked lists. Each one has its advantages and
@@ -76,3 +76,5 @@ enqueue another element? The array isn't full, but the position of the elements
 is not adequate. To preserve the FIFO policy, we need to _shift_ all of the
 elements to the start of the array, so we end up with `[2 3 4 -]`. Now we can
 add elements as we did with stacks.
+
+## Linked Lists
