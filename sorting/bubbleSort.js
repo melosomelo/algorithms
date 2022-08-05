@@ -15,7 +15,3 @@ function bubbleSort(array) {
     }
   }
 }
-
-const a = [1, 4, 2, 100, 9149, 10301];
-bubbleSort(a);
-console.log(a);

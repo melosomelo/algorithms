@@ -26,7 +26,3 @@ function merge(array, lo, mid, hi, aux) {
     aux[k] = array[k];
   }
 }
-
-const a = [1, 2, 3, 4, 5];
-mergesort(a);
-console.log(a);
