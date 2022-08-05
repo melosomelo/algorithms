@@ -11,6 +11,8 @@ to it.
 - [x] [Insertion sort](#insertion-sort)
 - [x] [Bubble sort](#bubble-sort)
 - [ ] [Merge sort](#merge-sort)
+  - [ ] Recursive
+  - [ ] Iterative
 - [ ] [Quicksort](#quicksort)
 
 # Analysis
