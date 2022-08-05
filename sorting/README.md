@@ -7,11 +7,11 @@ to it.
 
 # Implementations
 
-- [x] Selection sort
-- [x] Insertion sort
-- [ ] Bubble sort
-- [ ] Merge sort
-- [ ] Quicksort
+- [x] [Selection sort](#selection-sort)
+- [x] [Insertion sort](#insertion-sort)
+- [x] [Bubble sort](#bubble-sort)
+- [ ] [Merge sort](#merge-sort)
+- [ ] [Quicksort](#quicksort)
 
 # Analysis
 
@@ -73,3 +73,47 @@ some auxiliary variables.
 
 As with selection sort, insertion sort can be made stable if we maintain the
 comparisons to strictly greater.
+
+## Bubble sort
+
+Bubble sort is the another very simple yet inefficient sorting algorithm. Its
+strategy is to sweep through the array multiple times, swapping adjacent pairs
+of elements when the first element of the two is greater than the second.
+
+Consider the array `[4,1,2,3]`. By traversing the array from the left to right,
+we get:
+
+- The first pair to consider is `[4,1]`. `4` is greater than `1`, so we swap
+  them and get `[1,4,2,3]`.
+- Now the pair is `[4,2]`. `4` is greater than `2`, so we get `[1,2,4,3]`.
+- Finally, the last pair is `[4,3]`. We swap them and get the sorted array
+  `[1,2,3,4]`.
+
+Just because we were able to sort this array in one sweep, this doesn't mean
+that bubble sort is linear. Just one sweep wouldn't be enough for the array
+`[3,2,1]`, for example.
+
+Therefore, the main question for bubble sort is **how many sweeps do we need to
+sort the array?**. This is a very difficult question, as there are many possible
+distributions for the array elements.
+
+We can start to answer this question by trying to figure out the maximum number
+of sweeps that would take to sort any array. If we run some examples of bubble
+sort, you'll see that we correctly position _at least_ one element in each
+sweep. It can be exactly one, in cases such as `[5,4,3,2,1]`, and more than one,
+like with `[2,1,4,3,5]`. With this in mind, the case requiring the maximum
+amount of sweeps would be the one in which we correctly position exactly one
+element in each round and one where all the elements are initially in the wrong
+position. This case would require `n` sweeps (with `n` being the size of the
+array), and it is precisely when the array is in descending order. This is
+bubble sort's worst case scenario, with time complexity of `O(n²)`. This becomes
+very obvious when we consider that we will have a nested loop, which will
+traverse the complete array for each element of the array.
+
+The minimum number of sweeps would be one, in the case of the array already
+being sorted. This is the best case, which is clearly linear, as we traverse the
+array only once.
+
+With regards to memory complexity and stability, bubble sort is just like
+insertion and selection sort. Both have constant memory complexity and can be
+made stable if maintain a strictly greater comparison.
