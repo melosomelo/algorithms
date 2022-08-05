@@ -50,13 +50,13 @@ cases, but not as much as selection sort.
 
 Much like selection sort, insertion sort divides the array into two parts, one
 sorted and one unsorted. The main difference is that insertion sort does not
-seek to put each element immediately into its final position, as does selection
-sort, which translates into not needing to scan the whole array.
+seek to put each element immediately into its final position, which translates
+into not needing to scan the whole array.
 
 Given an array `[a1, a2, ..., b1, b2]`, with the `a`'s being the sorted part of
 the array, we will choose an element from the `b`'s and **insert** it into the
-`a` part, in the position that makes the `a` part remain sorted. We repeat this
-for each element of `b`.
+`a` part, in the first position that makes the `a` part remain sorted. We repeat
+this for each element of `b`.
 
 So, if we had an array such as `[3,1,2]`, we can say that the `a` part is `[3]`
 and `b` is `[1,2]`. Correctly inserting `1` into the `a` part, we get `[1,3]`
@@ -66,9 +66,9 @@ With regards to time complexity, it's very clear that insertion sort is
 sensitive to its input. For example, if the array (the best case) is already
 sorted, then we will not need to correctly insert any element from `b` into `a`,
 making it `O(n)`. However, if we consider an array in descending order, we still
-get a `O(n²)` time running time. In this case, the inner loop will run very much
-like the inner loop in selection sort, and we can work that time complexity by
-using the AP sum formula.
+get a `O(n²)` running time. In this case, the inner loop will run very much like
+the inner loop in selection sort, and we can work that time complexity by using
+the AP sum formula.
 
 Insertion sort also has a constant memory complexity, as we only need to create
 some auxiliary variables.
@@ -107,10 +107,16 @@ like with `[2,1,4,3,5]`. With this in mind, the case requiring the maximum
 amount of sweeps would be the one in which we correctly position exactly one
 element in each round and one where all the elements are initially in the wrong
 position. This case would require `n` sweeps (with `n` being the size of the
-array), and it is precisely when the array is in descending order. This is
-bubble sort's worst case scenario, with time complexity of `O(n²)`. This becomes
-very obvious when we consider that we will have a nested loop, which will
-traverse the complete array for each element of the array.
+array), and it is precisely the case when the array is in descending order. This
+is bubble sort's worst case scenario, with time complexity of `O(n²)`. Analyzing
+this is very straightforward, as the inner loop that traverses the array will
+run `n` times, and thus the operations inside it will have a cost proportional
+to `n²`.
+
+Not every case will need `n` sweeps. Thus, to steer away from such a pessimistic
+approach, we can use a boolean flag within the inner loop to check if the array
+is already sorted. If we happen to perform any swaps, this means that it isn't
+sorted. We then reset this flag before the beginning of the inner loop.
 
 The minimum number of sweeps would be one, in the case of the array already
 being sorted. This is the best case, which is clearly linear, as we traverse the
@@ -118,4 +124,4 @@ array only once.
 
 With regards to memory complexity and stability, bubble sort is just like
 insertion and selection sort. Both have constant memory complexity and can be
-made stable if maintain a strictly greater comparison.
+made stable if we maintain a strictly greater comparison.
