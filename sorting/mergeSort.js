@@ -1,3 +1,4 @@
+// Traditional, recursive merge sort (top-down)
 function mergesort(array) {
   const aux = [...array];
   sort(array, 0, array.length - 1, aux);
