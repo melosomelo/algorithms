@@ -9,9 +9,9 @@ to it.
 
 |      Algorithm       | Implemented |   Best case    |   Worst case   | Stable |             Obs             |
 | :------------------: | :---------: | :------------: | :------------: | :----: | :-------------------------: |
-|    Selection sort    |     ✅      |    `O(n²)`     |    `O(n²)`     |   ❌   |                             |
-|    Insertion sort    |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                             |
-|     Bubble sort      |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                             |
+|    Selection sort    |     ✅      |    `O(n²)`     |    `O(n²)`     |   ❌   |              -              |
+|    Insertion sort    |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |              -              |
+|     Bubble sort      |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |              -              |
 | Recursive merge sort |     ✅      | `O(n * log n)` | `O(n * log n)` |   ✅   | Has `O(n)` space complexity |
-| Iterative merge sort |             | `O(n * log n)` | `O(n * log n)` |   ✅   |                             |
-|      Quicksort       |             | `O(n * log n)` |    `O(n²)`     |        |                             |
+| Iterative merge sort |     ❌      | `O(n * log n)` | `O(n * log n)` |   ✅   |              -              |
+|      Quicksort       |     ❌      | `O(n * log n)` |    `O(n²)`     |   ❌   |              -              |
