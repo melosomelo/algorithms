@@ -13,3 +13,4 @@ specific topic. Topics may have subtopics.
 
 - [Linear data structures](./linear-data-structures/README.md) - Stacks, queues
   and linked lists.
+- [Sorting algorithms](./sorting/README.md)
