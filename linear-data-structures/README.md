@@ -14,6 +14,6 @@ predecessor and successor.
 | Double linked list |     ❌      |      -       |     -     |  -  |
 
 \*_Although sometimes this operation can take linear time (due to resizing and
-shifting), if we make a
+shifting), if we use a
 [different kind of analysis](https://en.wikipedia.org/wiki/Amortized_analysis),
 we can see that it's constant overall._

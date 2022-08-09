@@ -5,11 +5,11 @@ order. This order may very well be the standard numerical relation of
 greater/smaller, but the use cases of these algorithms certainly aren't limited
 to it.
 
-|      Algorithm       | Implemented |   Best case    |   Worst case   | Stable |             Obs             |
-| :------------------: | :---------: | :------------: | :------------: | :----: | :-------------------------: |
-|    Selection sort    |     ✅      |    `O(n²)`     |    `O(n²)`     |   ❌   |              -              |
-|    Insertion sort    |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |              -              |
-|     Bubble sort      |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |              -              |
-| Recursive merge sort |     ✅      | `O(n * log n)` | `O(n * log n)` |   ✅   | Has `O(n)` space complexity |
-| Iterative merge sort |     ❌      | `O(n * log n)` | `O(n * log n)` |   ✅   |              -              |
-|      Quicksort       |     ❌      | `O(n * log n)` |    `O(n²)`     |   ❌   |              -              |
+|      Algorithm       | Implemented |   Best case    |   Worst case   | Stable |               Obs                |
+| :------------------: | :---------: | :------------: | :------------: | :----: | :------------------------------: |
+|    Selection sort    |     ✅      |    `O(n²)`     |    `O(n²)`     |   ❌   |                -                 |
+|    Insertion sort    |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                -                 |
+|     Bubble sort      |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                -                 |
+| Recursive merge sort |     ✅      | `O(n * log n)` | `O(n * log n)` |   ✅   |   Has `O(n)` space complexity    |
+| Iterative merge sort |     ❌      | `O(n * log n)` | `O(n * log n)` |   ✅   |                -                 |
+| Recursive quicksort  |     ❌      | `O(n * log n)` |    `O(n²)`     |   ❌   | Worst case can be easily avoided |
