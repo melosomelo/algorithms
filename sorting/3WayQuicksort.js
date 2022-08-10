@@ -13,8 +13,8 @@ function partition(array, lo, hi) {
   const pivot = array[lo];
   let lt = lo,
     gt = hi;
-  for (let i = lo + 1; i <= hi; ) {
-    if (i > gt) break;
+  let i = lt + 1;
+  while (i <= gt) {
     if (array[i] < pivot) {
       swap(array, i, lt);
       lt += 1;
