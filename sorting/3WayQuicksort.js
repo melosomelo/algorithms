@@ -1,5 +1,14 @@
 function quicksort(array) {
+  shuffle(array);
   sort(array, 0, array.length - 1);
+}
+
+function shuffle(array) {
+  let j;
+  for (let i = 1; i < array.length; i++) {
+    j = Math.floor(Math.random() * (i + 1));
+    swap(array, i, j);
+  }
 }
 
 function sort(array, lo, hi) {
