@@ -7,3 +7,4 @@ different programming languages.
 
 - [Linear data structures](./linear-data-structures/README.md)
 - [Sorting algorithms](./sorting/README.md)
+- [Trees](./trees/README.md)
