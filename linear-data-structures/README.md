@@ -1,4 +1,4 @@
-# Linear data structures
+# Linear data structures 📈
 
 Linear data structures resemble (as the name suggests) straight lines. They
 arrange their elements sequentially, with each element being connected to their

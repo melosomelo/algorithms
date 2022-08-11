@@ -1,4 +1,4 @@
-# Trees
+# Trees 🌳
 
 A tree is an abstract data type that is widely used in computer science to
 represent a collection of elements with a hierarchical relationship between

@@ -1,4 +1,4 @@
-# Sorting
+# Sorting ⬆️
 
 To sort is to organize a collection of elements with regards to a specific
 order. This order may very well be the standard numerical relation of
