@@ -1,5 +1,8 @@
 # Algorithms 🤖
 
+My implementations of many different algorithms and data structures, in many
+different programming languages.
+
 ## Topics
 
 - [Linear data structures](./linear-data-structures/README.md)
