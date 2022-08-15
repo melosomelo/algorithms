@@ -56,7 +56,7 @@ function nAryHeap(n) {
       const max = this.#array.pop();
       let i = 1;
       const N = this.size();
-      while (this.#getChildIndex(i, 1) < N) {
+      while (this.#getChildIndex(i, 1) <= N) {
         let j = this.#getChildIndex(i, 1);
         for (let k = 2; k <= this.#n; k++) {
           const kthChild = this.#getChild(i, k);
