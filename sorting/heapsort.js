@@ -1,7 +1,13 @@
 function heapsort(array) {
   let N = array.length;
+  // Constructing the initial heap
   for (let i = Math.floor(N / 2); i >= 1; i--) {
     sink(array, i, N);
+  }
+  // Sorting the array
+  while (N > 0) {
+    swap(a, 0, --N);
+    sink(a, 1, N);
   }
 }
 
@@ -24,7 +30,3 @@ function swap(array, i, j) {
   array[i] = array[j];
   array[j] = aux;
 }
-
-const a = [1, 10, 25, 3, 8, 12];
-heapsort(a);
-console.log(a);

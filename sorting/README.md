@@ -13,7 +13,7 @@ to it.
 |            Merge sort             |     ✅      | `O(n * log n)` | `O(n * log n)` |   ✅   |              Has `O(n)` space complexity               |
 |             Quicksort             |     ✅      | `O(n * log n)` |    `O(n²)`     |   ❌   | Worst case can be easily avoided with randomized array |
 |          3-way quicksort          |     ✅      | `O(n * log n)` |    `O(n²)`     |   ❌   |   Has better performance with lots of duplicate keys   |
-|             Heapsort              |     ❌      |       -        |       -        |   ❌   |                                                        |
+|             Heapsort              |     ✅      |       -        |       -        |   ❌   |                                                        |
 
 ## Analysis
 
