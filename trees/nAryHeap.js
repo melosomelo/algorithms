@@ -14,10 +14,6 @@ function nAryHeap(n) {
       return this.#array[this.#getChildIndex(i, j)];
     }
 
-    #father(i) {
-      return this.#array[Math.floor((i + this.#n - 2) / this.#n)];
-    }
-
     #getFather(i) {
       return this.#array[this.#getFatherIndex(i)];
     }
