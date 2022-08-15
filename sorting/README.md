@@ -41,7 +41,7 @@ around swapping elements of the array in-place.
 When it comes to time complexity, selection sort is very inefficient. It is
 unsensible to input, meaning that its both its loops will always run to
 completion, regardless of the distribution of the elements. We can see that the
-instruction inside the inner loop will run `(n-1)`, `(n-2)`, `(n-3)`, ..., 0
+instructions inside the inner loop will run `(n-1)`, `(n-2)`, `(n-3)`, ..., 0
 times, for each value of `i`. This is a simple AP with a common difference of 1.
 If we use the
 [AP sum formula](https://en.wikipedia.org/wiki/Arithmetic_progression#Sum), it's
