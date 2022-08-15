@@ -8,7 +8,7 @@ to it.
 |             Algorithm             | Implemented |   Best case    |   Worst case   | Stable |                          Obs                           |
 | :-------------------------------: | :---------: | :------------: | :------------: | :----: | :----------------------------------------------------: |
 | [Selection sort](#selection-sort) |     ✅      |    `O(n²)`     |    `O(n²)`     |   ❌   |                           -                            |
-|          Insertion sort           |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                           -                            |
+| [Insertion sort](#insertion-sort) |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                           -                            |
 |            Bubble sort            |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                           -                            |
 |            Merge sort             |     ✅      | `O(n * log n)` | `O(n * log n)` |   ✅   |              Has `O(n)` space complexity               |
 |             Quicksort             |     ✅      | `O(n * log n)` |    `O(n²)`     |   ❌   | Worst case can be easily avoided with randomized array |
