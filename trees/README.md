@@ -6,6 +6,8 @@ them. Each element of the tree is called a **node**, and each node (except the
 root) has one parent, but can have many (or even zero) children, depending on
 the type of the tree.
 
+## Tree structures
+
 |    Tree     | Implemented |     Insert op      |       Remove op        | Search op |
 | :---------: | :---------: | :----------------: | :--------------------: | :-------: |
 | Binary heap |     ✅      |     `O(log n)`     |       `O(log n)`       |  `O(n)`   |
