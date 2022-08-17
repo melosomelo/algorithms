@@ -16,9 +16,24 @@ only one parent. From this hierarchical relationship, we can derive other
 intuitive terms. For example, a node can have **siblings** (nodes who have the
 same parent), **grandfather**, **uncles**, etc.
 
+A tree without children is called a **leaf**.
+
 <p align="center">
 <img  width="380" height="200" src="../assets/images/tree-concepts-01.png"  />
 </p>
+
+Each tree has a **root**, which is the node at the top of the tree. Also, each
+child of a node forms a **subtree**, with that child being the root of the
+subtree. A tree is a naturally recursive structure.
+
+A downward sequence of nodes of the tree is called a **path**. The **length** of
+said path is the amount of nodes in the sequence minus one. The **height** of
+the tree is the length of its longest path. Finally, the **size** of a tree is
+given by the number of nodes in it.
+
+It's possible to list many more definitions when it comes to trees, but these
+are the most important and are the ones that appear the most.
+
 ## Tree structures
 
 _To see more details about each structure (best, average, worst complexity,
