@@ -21,5 +21,3 @@ that if we divided `[5,1]` into `[1]` and `[5]`, we will merge them into
 So, `[1]` and `[5]` get merged into `[1,5]`; `[4]` and `[3]` into `[3,4]`, which
 then gets merged with `[2]` to give `[2,3,4]`. Finally, `[1,5]` gets merged with
 `[2,3,4]` to give `[1,2,3,4,5]`.
-
-![merge sort overview](../../assets/images/merge-sort-overview.png)
