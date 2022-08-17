@@ -12,6 +12,6 @@ to it.
 |    [Bubble sort](./bubble-sort/)    |     ✅      |     `O(n)`     |    `O(n²)`     |   ✅   |                           -                            |
 |     [Merge sort](./merge-sort/)     |     ✅      | `O(n * log n)` | `O(n * log n)` |   ✅   |              Has `O(n)` space complexity               |
 |      [Quicksort](./quicksort/)      |     ✅      | `O(n * log n)` |    `O(n²)`     |   ❌   | Worst case can be easily avoided with randomized array |
-|           3-way quicksort           |     ✅      | `O(n * log n)` |    `O(n²)`     |   ❌   |   Has better performance with lots of duplicate keys   |
+|   [3-way quicksort](./quicksort/)   |     ✅      | `O(n * log n)` |    `O(n²)`     |   ❌   |   Has better performance with lots of duplicate keys   |
 |       [Heapsort](./heapsort/)       |     ✅      | `O(n * log n)` | `O(n * log n)` |   ❌   |                           -                            |
 |               Timsort               |     ❌      |       -        |       -        |   -    |                           -                            |
