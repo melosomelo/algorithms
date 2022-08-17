@@ -8,6 +8,9 @@ the type of the tree.
 
 ## Tree structures
 
+_To see more details about each structure (best, average, worst complexity,
+etc.), check their individual pages._
+
 |                    Tree                     | Implemented |     Insert op      |       Remove op        | Search op |
 | :-----------------------------------------: | :---------: | :----------------: | :--------------------: | :-------: |
 |           [Binary heap](./heap/)            |     ✅      |     `O(log n)`     |       `O(log n)`       |  `O(n)`   |
