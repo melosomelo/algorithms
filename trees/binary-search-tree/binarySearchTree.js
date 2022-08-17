@@ -18,7 +18,8 @@ class BST {
   }
 
   #insert(node, key, value) {
-    if (node === null) return { key, value, left: null, right: null };
+    if (node === null)
+      return { key, value: value ?? key, left: null, right: null };
     if (key === node.key) node.value = value;
     else if (key > node.key) node.right = this.#insert(node.right, key, value);
     else node.left = this.#insert(node.left, key, value);
@@ -26,13 +27,35 @@ class BST {
     return node;
   }
 
+  delete(key) {
+    this.#root = this.#del(this.#root, key);
+  }
+
+  #del(node, key) {
+    if (node === null) return null;
+    if (node.key > key) node.left = this.#del(node.left, key);
+    else if (node.key < key) node.right = this.#del(node.right, key);
+    else {
+      if (node.left === null) return node.right;
+      if (node.right === null) return node.left;
+      const succ = this.#sucessor(node);
+      succ.right = this.#del(node.right, succ.key);
+      succ.left = node.left;
+      return succ;
+    }
+    return node;
+  }
+
+  // returns a reference to the node's successor and to its parent
+  #sucessor(node) {
+    let current = node.right;
+    while (current.left !== null) {
+      current = current.left;
+    }
+    return current;
+  }
+
   print() {
     console.log(this.#root);
   }
 }
-
-const bst = new BST();
-bst.add(32, 32);
-bst.add(45, 45);
-bst.add(10, 10);
-bst.print();
