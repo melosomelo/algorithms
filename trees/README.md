@@ -8,7 +8,8 @@ the type of the tree.
 
 ## Tree structures
 
-|    Tree     | Implemented |     Insert op      |       Remove op        | Search op |
-| :---------: | :---------: | :----------------: | :--------------------: | :-------: |
-| Binary heap |     ✅      |     `O(log n)`     |       `O(log n)`       |  `O(n)`   |
-| n-ary heap  |     ✅      | `O(log n / log d)` | `O(d * log n / log d)` |  `O(n)`   |
+|        Tree        | Implemented |     Insert op      |       Remove op        | Search op |
+| :----------------: | :---------: | :----------------: | :--------------------: | :-------: |
+|    Binary heap     |     ✅      |     `O(log n)`     |       `O(log n)`       |  `O(n)`   |
+|     n-ary heap     |     ✅      | `O(log n / log d)` | `O(d * log n / log d)` |  `O(n)`   |
+| Binary search tree |     ❌      |         -          |           -            |     -     |
