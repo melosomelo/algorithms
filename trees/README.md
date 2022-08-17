@@ -19,7 +19,7 @@ same parent), **grandfather**, **uncles**, etc.
 A tree without children is called a **leaf**.
 
 <p align="center">
-<img  width="380" height="200" src="../assets/images/tree-concepts-01.png"  />
+<img   src="../assets/images/tree-concepts-01.png"  />
 </p>
 
 Each tree has a **root**, which is the node at the top of the tree. Also, each
