@@ -11,8 +11,8 @@ the type of the tree.
 _To see more details about each structure (best, average, worst complexity,
 etc.), check their individual pages._
 
-|                    Tree                     | Implemented |     Insert op      |       Remove op        | Search op |
-| :-----------------------------------------: | :---------: | :----------------: | :--------------------: | :-------: |
-|           [Binary heap](./heap/)            |     ✅      |     `O(log n)`     |       `O(log n)`       |  `O(n)`   |
-|            [d-ary heap](./heap/)            |     ✅      | `O(log n / log d)` | `O(d * log n / log d)` |  `O(n)`   |
-| [Binary search tree](./binary-search-tree/) |     ❌      |         -          |           -            |     -     |
+|                    Tree                     | Implemented |
+| :-----------------------------------------: | :---------: |
+|           [Binary heap](./heap/)            |     ✅      |
+|            [d-ary heap](./heap/)            |     ✅      |
+| [Binary search tree](./binary-search-tree/) |     ✅      |
