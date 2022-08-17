@@ -16,8 +16,9 @@ only one parent. From this hierarchical relationship, we can derive other
 intuitive terms. For example, a node can have **siblings** (nodes who have the
 same parent), **grandfather**, **uncles**, etc.
 
-<img  align="center" width="400" height="200" src="../assets/images/tree-concepts-01.png"  />
-
+<p align="center">
+<img  width="380" height="200" src="../assets/images/tree-concepts-01.png"  />
+</p>
 ## Tree structures
 
 _To see more details about each structure (best, average, worst complexity,
