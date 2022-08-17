@@ -11,5 +11,5 @@ the type of the tree.
 |                    Tree                     | Implemented |     Insert op      |       Remove op        | Search op |
 | :-----------------------------------------: | :---------: | :----------------: | :--------------------: | :-------: |
 |           [Binary heap](./heap/)            |     ✅      |     `O(log n)`     |       `O(log n)`       |  `O(n)`   |
-|            [n-ary heap](./heap/)            |     ✅      | `O(log n / log d)` | `O(d * log n / log d)` |  `O(n)`   |
+|            [d-ary heap](./heap/)            |     ✅      | `O(log n / log d)` | `O(d * log n / log d)` |  `O(n)`   |
 | [Binary search tree](./binary-search-tree/) |     ❌      |         -          |           -            |     -     |
