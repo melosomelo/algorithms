@@ -46,7 +46,6 @@ class BST {
     return node;
   }
 
-  // returns a reference to the node's successor and to its parent
   #sucessor(node) {
     let current = node.right;
     while (current.left !== null) {
