@@ -1,5 +1,7 @@
 ### Insertion sort
 
+![insertion sort](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
 Insertion sort is a bit like selection sort, in the sense that it also divides
 the array into sorted and unsorted parts. Unlike selection sort however,
 insertion sort does not seek the smallest element within the unsorted part to
