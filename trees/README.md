@@ -48,3 +48,12 @@ etc.), check their individual pages._
 |           [Binary heap](./heap/)            |     ✅      |
 |            [d-ary heap](./heap/)            |     ✅      |
 | [Binary search tree](./binary-search-tree/) |     ✅      |
+
+## Tree algorithms
+
+|       Algorithm       | Implemented |
+| :-------------------: | :---------: |
+|  Preorder traversal   |     ❌      |
+|  Postorder traversal  |     ❌      |
+|   Inorder traversal   |     ❌      |
+| Level order traversal |     ❌      |
