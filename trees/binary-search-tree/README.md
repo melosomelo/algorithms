@@ -104,21 +104,22 @@ until the point we reach a node that has no left subtree).
 With all of this in mind, the code for the removal of a value `x` in a BST goes
 something like this:
 
-```remove(x,root):
-if root == null then
-  return null
+```
+remove(x,root):
+  if root == null then
+    return null
 
-if x > root.value then
-  root.right = remove(x,root.right)
-else if x < root.value then
-  root.left = remove(x,root.left)
-else
-  if x.left == null then
-    return x.right
-  if x.right == null then
-    return x.left
-  succ = successor(root)
-  succ.right = remove(succ.value,root.right)
-  succ.left = root.left
-  return succ
+  if x > root.value then
+    root.right = remove(x,root.right)
+  else if x < root.value then
+    root.left = remove(x,root.left)
+  else
+    if x.left == null then
+      return x.right
+    if x.right == null then
+      return x.left
+    succ = successor(root)
+    succ.right = remove(succ.value,root.right)
+    succ.left = root.left
+    return succ
 ```
