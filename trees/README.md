@@ -53,7 +53,7 @@ etc.), check their individual pages._
 
 |       Algorithm       | Implemented |
 | :-------------------: | :---------: |
-|  Preorder traversal   |     ❌      |
-|  Postorder traversal  |     ❌      |
-|   Inorder traversal   |     ❌      |
-| Level order traversal |     ❌      |
+|  Preorder traversal   |     ✅      |
+|  Postorder traversal  |     ✅      |
+|   Inorder traversal   |     ✅      |
+| Level order traversal |     ✅      |
