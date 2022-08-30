@@ -4,7 +4,7 @@
 
 Quicksort is one of the most important and effective sorting algorithms we have
 today. It is the go-to sorting algorithm for many default libraries of many
-programming languages, as it performs in `O(log n)` time on average and has
+programming languages, as it performs in `O(n * log n)` time on average and has
 constant memory complexity.
 
 Very much like [merge sort](../merge-sort/README.md), quicksort is a
@@ -29,7 +29,7 @@ elements). Indeed, very much like merge sort.
 
 In our previous example, quicksort would now apply the same partitioning method
 to the sub-arrays `[1,5]` and `[13,10]`. Note that we ignore the pivot, since
-it's already at its last position in the array.
+it's already at its final position in the array.
 
 Therefore, a pseudocode for quicksort would look something like:
 
@@ -51,8 +51,8 @@ determine the two new intervals in which we will need to operate.
 ## The `partition` method
 
 Good enough, but how does partition actually work? There are many different ways
-to implement a partitioning method, but the one I particularly think it's the
-simplest goes something like this:
+to implement a partitioning method, but the one I particularly consider the
+simplest goes like this:
 
 1. Choose the last element of the interval as the pivot. That is, the element at
    index `hi`.
@@ -99,4 +99,9 @@ to true for any of the remaining elements, so we exit the loop with `pIndex`
 equal to `1`. We swap `16` and `7`, resulting in the array `[1,7,10,13,16]`.
 Finally, we return `pIndex`. By chance, the resulting array is sorted.
 
-## Complexity
+## Time complexity
+
+Quicksort's time complexity is determined by two things: the `partition`
+method's time complexity and the amount of times we call it. `partition` is
+clearly `O(n)`, as we only iterate through the array. Therefore, the amount of
+times `partition` is called is a more determinant factor in its running time.
