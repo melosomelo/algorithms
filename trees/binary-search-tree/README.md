@@ -122,4 +122,10 @@ remove(x,root):
     succ.right <- remove(succ.value,root.right)
     succ.left <- root.left
     return succ
+
+successor(node):
+  current <- node.right
+  while current != null and current.left != null
+    current <- current.left
+  return current
 ```
