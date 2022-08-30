@@ -125,7 +125,7 @@ remove(x,root):
 
 successor(node):
   current <- node.right
-  while current != null and current.left != null
+  while current.left != null
     current <- current.left
   return current
 ```
