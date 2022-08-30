@@ -36,3 +36,10 @@ in the "middle". With our example, this would result in the following order:
 To no surpise, postorder traversal visits the node _after_ traversing both its
 subtrees (left and then right). With our example, this would results in the
 following order: `4 5 2 3 1`.
+
+## Level order traversal
+
+Level order traversal visits each level of the tree, from top to bottom and from
+left to right. It stars with the root, then its immediate children, then the
+immediate children of those children and so on. With our example, we'd have:
+`1 2 3 4 5`.
