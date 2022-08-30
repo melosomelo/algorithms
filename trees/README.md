@@ -51,9 +51,9 @@ etc.), check their individual pages._
 
 ## Tree algorithms
 
-|                    Algorithm                    | Implemented |
-| :---------------------------------------------: | :---------: |
-|  [Preorder traversal](./traversals/README.md)   |     ✅      |
-|  [Postorder traversal](./traversals/README.md)  |     ✅      |
-|   [Inorder traversal](./traversals/README.md)   |     ✅      |
-| [Level order traversal](./traversals/README.md) |     ✅      |
+|               Algorithm                | Implemented |
+| :------------------------------------: | :---------: |
+|  [Preorder traversal](./traversals/)   |     ✅      |
+|  [Postorder traversal](./traversals/)  |     ✅      |
+|   [Inorder traversal](./traversals/)   |     ✅      |
+| [Level order traversal](./traversals/) |     ✅      |
