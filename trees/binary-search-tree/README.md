@@ -58,9 +58,9 @@ insert(n,root):
   if root == null then
     return n
   if n.value < root.value then
-    root.left = insert(n,root.left)
+    root.left <- insert(n,root.left)
   else if n.value > r.value then
-    root.right = insert(n,root.right)
+    root.right <- insert(n,root.right)
 
   return root
 ```
@@ -110,16 +110,16 @@ remove(x,root):
     return null
 
   if x > root.value then
-    root.right = remove(x,root.right)
+    root.right <- remove(x,root.right)
   else if x < root.value then
-    root.left = remove(x,root.left)
+    root.left <- remove(x,root.left)
   else
     if x.left == null then
       return x.right
     if x.right == null then
       return x.left
-    succ = successor(root)
-    succ.right = remove(succ.value,root.right)
-    succ.left = root.left
+    succ <- successor(root)
+    succ.right <- remove(succ.value,root.right)
+    succ.left <- root.left
     return succ
 ```
