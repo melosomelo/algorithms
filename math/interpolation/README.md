@@ -21,10 +21,8 @@ Given a set of `n` points, the
 [Lagrange polynomial](https://en.wikipedia.org/wiki/Lagrange_polynomial) of
 degree n that interpolates these points is given by:
 
-<span style="font-size:10rem;">
 $$P_n(x) = \sum_{k = 0}^{n}f(x_k)l_k(x)$$
-</span>
 
-Where the Lagrange basis formula is:
+With $l_k(x)$ being the _Lagrange basis_. Its value is given by:
 
 $$l_k(x) = \prod_{\substack{j = 0 \\ j \neq k}}^{n}\frac{(x - x_j)}{(x_k - x_j)}$$
