@@ -21,8 +21,12 @@ Given a set of `n` points, the
 [Lagrange polynomial](https://en.wikipedia.org/wiki/Lagrange_polynomial) of
 degree n that interpolates these points is given by:
 
-![Lagrange polynomial formula](../../assets/images/lagrange-polynomial.png)
+<p align="center">
+<img   src="../../assets/images/lagrange-polynomial.png"  />
+</p>
 
 Where the Lagrange basis formula is:
 
-![Lagrange basis formula](../../assets/images/lagrange-basis-formula.png)
+<p align="center">
+<img   src="../../assets/images/lagrange-basis-formula.png"  />
+</p>
