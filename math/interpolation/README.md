@@ -25,6 +25,8 @@ degree n that interpolates these points is given by:
 <img   src="../../assets/images/lagrange-polynomial.png"  />
 </p>
 
+$$P_n(x) = \sum_{k = 0}^{n}f(x_k)l_k(x)$$
+
 Where the Lagrange basis formula is:
 
 <p align="center">
