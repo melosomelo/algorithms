@@ -6,8 +6,8 @@ them. Each element of the tree is called a **node**, and each node (except the
 root) has one parent, but can have many (or even zero) children, depending on
 the type of the tree.
 
-It's important to keep in mind some concepts when dealing with trees. Luckily,
-most of the terminology is rather intuitive.
+It's important to keep in mind some definitions when dealing with trees.
+Luckily, most of the terminology is rather intuitive.
 
 A tree is comprised of **nodes**. Each node may or may not have **links** to
 other nodes. If the link is to nodes below it, then these are its **children**.
@@ -57,3 +57,5 @@ etc.), check their individual pages._
 |  [Postorder traversal](./traversals/)  |     ✅      |
 |   [Inorder traversal](./traversals/)   |     ✅      |
 | [Level order traversal](./traversals/) |     ✅      |
+|             Left rotation              |     ❌      |
+|             Right rotation             |     ❌      |

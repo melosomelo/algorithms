@@ -2,8 +2,7 @@
 
 A tree is not a linear data structure. This means that its elements are not
 arranged sequentially, with one coming after the other as it is in an array or
-linked list. Therefore, there are multiple ways to traverse a tree, all very
-simple to understand and implement.
+linked list. Therefore, there are multiple ways to traverse a tree.
 
 Consider the following tree, which we'll use in the following examples:
 
@@ -40,6 +39,6 @@ following order: `4 5 2 3 1`.
 ## Level order traversal
 
 Level order traversal visits each level of the tree, from top to bottom and from
-left to right. It stars with the root, then its immediate children, then the
+left to right. It starts with the root, then its immediate children, then the
 immediate children of those children and so on. With our example, we'd have:
 `1 2 3 4 5`.

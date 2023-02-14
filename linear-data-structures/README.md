@@ -13,7 +13,6 @@ predecessor and successor.
 | Simple linked list |     ✅      |    `O(1)`    |  `O(1)`   |  -  |
 | Double linked list |     ❌      |      -       |     -     |  -  |
 
-\*_Although sometimes this operation can take linear time (due to resizing and
-shifting), if we use a
-[different kind of analysis](https://en.wikipedia.org/wiki/Amortized_analysis),
-we can see that it's constant overall._
+_Although sometimes this operation can take linear time (due to resizing and
+shifting), if we use a [different kind of analysis](https://en.wikipedia.org/wiki/Amortized_analysis),
+w  can see that it's constant overall._

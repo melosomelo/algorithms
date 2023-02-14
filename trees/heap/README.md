@@ -8,7 +8,7 @@ equal than its parent; likewise, if it's a _min heap_, then each child's value
 must be greater or equal than that of its parent.
 
 The most common form of a heap is a _binary heap_, which is nothing more than a
-heap in which each node has at most two children. Nevertheless, the we can have
+heap in which each node has at most two children. Nevertheless, we can have
 n-ary heaps, with n being any number greater or equal to 2.
 
 Overall, a heap is a good choice for any application that requires fast inserts
