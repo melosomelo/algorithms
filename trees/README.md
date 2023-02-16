@@ -51,11 +51,11 @@ etc.), check their individual pages._
 
 ## Tree algorithms
 
-|               Algorithm                | Implemented |
-| :------------------------------------: | :---------: |
-|  [Preorder traversal](./traversals/)   |     ✅      |
-|  [Postorder traversal](./traversals/)  |     ✅      |
-|   [Inorder traversal](./traversals/)   |     ✅      |
-| [Level order traversal](./traversals/) |     ✅      |
-|             Left rotation              |     ❌      |
-|             Right rotation             |     ❌      |
+|                          Algorithm                          | Implemented |
+| :---------------------------------------------------------: | :---------: |
+|  [Preorder traversal(recursive/iterative)](./traversals/)   |    ✅✅     |
+|  [Postorder traversal(recursive/iterative)](./traversals/)  |    ✅❌     |
+|   [Inorder traversal(recursive/iterative)](./traversals/)   |    ✅❌     |
+| [Level order traversal(recursive/iterative)](./traversals/) |    ✅❌     |
+|                        Left rotation                        |     ❌      |
+|                       Right rotation                        |     ❌      |

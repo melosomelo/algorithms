@@ -7,9 +7,9 @@ become the parent, and if it's a _right rotation_, the left child becomes the
 parent.
 
 This operation changes the structure of the tree and it changes subtrees'
-heights, but it does not invalidate the order of the tree, meaning if the tree
-is a binary search tree _before_ the rotation, it will continue to be so _after_
-the rotation.
+heights, but it does not invalidate its order , meaning if the tree is a binary
+search tree _before_ the rotation, it will continue to be so _after_ the
+rotation.
 
 The effects of o a rotation are shown in the following diagram. Notice how the
 order is maintained. Also, subtrees `a`, `b` and `c` can be empty.
