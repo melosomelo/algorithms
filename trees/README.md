@@ -48,6 +48,8 @@ etc.), check their individual pages._
 |           [Binary heap](./heap/)            |     ✅      |
 |            [d-ary heap](./heap/)            |     ✅      |
 | [Binary search tree](./binary-search-tree/) |     ✅      |
+|        [AVL Tree](./balanced-trees/)        |     ❌      |
+|         [B-Tree](./balanced-trees/)         |     ❌      |
 
 ## Tree algorithms
 

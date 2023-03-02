@@ -12,7 +12,8 @@ search tree _before_ the rotation, it will continue to be so _after_ the
 rotation.
 
 The effects of o a rotation are shown in the following diagram. Notice how the
-order is maintained. Also, subtrees `a`, `b` and `c` can be empty.
+order is maintained. Also, subtrees `a`, `b` and `c` can be empty, while `X` and
+`Y` cannot.
 
 ```plaintext
         |                               |
