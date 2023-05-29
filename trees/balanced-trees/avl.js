@@ -214,11 +214,3 @@ class AVLTree {
     }
   }
 }
-
-const T = new AVLTree();
-T.add(1);
-T.add(2);
-T.add(3);
-T.add(4);
-T.delete(1);
-T.print();
